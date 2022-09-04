@@ -1,3 +1,26 @@
+
+body{
+    width:auto;
+    background-color: #fff;
+}
+.main{
+    text-align:center;
+}
+.main img{
+    width: 50%;
+    height: 300px;
+}
+.container{
+    font-size: 20px;
+}
+.container p{
+    text-align: center;
+}
+
+#question{
+    color: #0000;
+    background-color: #ffff;
+
 body {
     background: #efdec1;
     font-size: 14px;
@@ -11,6 +34,7 @@ body {
     border-radius: 4px;
     padding: 16px;
     position: relative;
+
 }
 
 #question {
