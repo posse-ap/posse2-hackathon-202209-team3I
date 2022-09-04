@@ -1,0 +1,184 @@
+/* header */
+@charset "utf-8";
+ul,
+li{
+    list-style: none;
+}
+header {
+    display: flex;
+    background-color: #E4CE06;
+    width: 100%;
+    height: 50px;
+}
+header p{
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+label {
+    width: 30px;
+    height: 30px;
+    border: 1px solid  black;
+    position: absolute;
+    right:9px;
+    top: 11px;
+    z-index: 1000;
+    }
+
+span {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 15px;
+    transition: .3s;
+    z-index: 100;
+}
+
+.hum1 {
+    top: 20px;
+}
+.hum2 { 
+    top: 27px;
+}
+
+.hum3 {
+    top: 34px;
+}
+
+  /* クリックしたらばつ印になるようにする */
+#confirm:checked ~ .hum1 {
+    width: 27px;
+    transform: rotate(45deg);
+    top :27px;
+    right: 12px;
+}
+#confirm:checked ~ .hum2 {
+    display: none;
+}
+#confirm:checked ~ .hum3 {
+    width: 27px;
+    transform: rotate(-45deg);
+    top :27px;
+    right: 12px;
+}
+
+#confirm {
+    display: none;
+}
+ul {
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    right: -100%;
+    text-align: center;
+    background-color: #E4CE06;
+    transition: 2s;
+    z-index: 100;
+  
+
+}
+
+li {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#confirm:checked ~ ul {
+    right:0 ;
+}
+
+
+
+
+header{
+  
+}
+.header-containar{
+
+
+}
+.tikuzenni{
+  margin-left: 10px;
+  font-size: 120px;
+}
+
+
+
+.swiper{
+  z-index: 5;
+  position: relative;
+  margin-bottom: 80px;
+}
+.swiper-wrapper{
+  position: relative;
+  z-index: 5;
+}
+.swiper-slide{
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+.swiper img{
+  z-index: 5;
+  
+}
+
+main{
+  background-color: #008fbc;
+  padding-bottom: 30px;
+}
+h3{
+  color:azure
+}
+.img{
+  text-align: center;
+  width: 100%;
+}
+.reason{
+
+}
+.reason img{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  position: absolute;
+  width: 10%;
+
+}
+.reasonText{
+background-color: #E4CE06;
+border-radius: 10%;
+text-align: center;
+margin: 0 auto;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 40px;
+display: inline-block;
+padding-left: 10px;
+padding-right: 10px;
+}
+.asobikata{
+  padding-bottom: 10px;
+}
+.asobikataText{
+  background-color: #E4CE06;
+  border-radius: 10%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 40px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.swiper{
+  width:100%;
+  height: ;
+}
+footer{
+  background-color: #E4E4E0;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+}
