@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSSE Lab</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="toppage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="toppage.js"></script>
+  </head>
+  <body>
+    <div class="header_container">
+      <header>
+          <p class="tikuzennni"></p>
+          <div>
+            <a href="http://127.0.0.1:5500/toppage/toppage.html">
+              <img src="../image/posselab.jpg" alt="" width="150vp">
+            </a>
+          </div>
+          <input type="checkbox" id="confirm">
+          <span class="hum1"></span>
+          <span class="hum2"></span>
+          <span class="hum3"></span>
+          <label for="confirm"></label>
+          
+          <ul>
+              <li><a href="http://127.0.0.1:5500/toppage/toppage.html#">トップページ</a></li>
+              <li><a href="http://127.0.0.1:5500/quiz/quiz.html">クイズページ</a></li>
+              <li><a href="http://127.0.0.1:5500/generater/generater.html">コトジェネレーター</a></li>
+          </ul>
+      </header>
+  </div>
+    <main>
+      <div class="title">
+        <img src="../image/posselab改良.jpg" alt="" width=>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目all 改良.jpg"
+              alt=""
+                />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_220904_0.jpg"
+              alt=""         />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_220904.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_atuhiro.jpg"
+              alt=""         />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_ayatugu.jpg"
+              alt=""
+                />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_masaki.jpg"
+              alt=""
+                          />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_otoko.jpg"
+              alt=""           />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_ryusei.jpg"
+              alt=""
+                          />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../image/LINE_ALBUM_2022夏ハッカソン１日目_220903  4 3.jpg"
+              alt=""
+                          />
+          </div>
+          ...
+          ...
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          // Optional parameters
+          direction: "horizontal",
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      </script>
+      
+
+      <section class="resaon">
+
+        <div class="reasonText">
+          <h3 class="white">POSSE Labができるまで</h3><br>
+          <>
+　チーム筑前煮は考えました。<br><br><br>
+<p class="blackstrong">
+  「これまであまり話したことがない3.0期生が仲良くなるにはどうすれば良いんだろう。。？」
+</p><br><br>
+<!-- <video src="../image/601_640x360 (1).mp4" autoplay width="150px"></video> -->
+<!-- <div> <img src="../image/13194_color.png" width="30px"></div> -->
+その結果、<br><br>
+<p class="strong">
+  ①お互いのことを知る
+  
+</p>
+<br>
+<p class="strong">
+
+  ②一緒に何かを体験する
+</p>
+<br>
+の２つが必要であるということがわかりました！<br><br><br>
+
+
+
+  そこで、「お互いのことを知る」ために<br><br>
+  <p class="blackstrong">
+
+    「3.0期生クイズ」
+  </p>
+
+  を作り、<br><br>
+  「一緒に何かを体験する」ために、みんなで遊ぶお題を提示してくれる<br><br>
+    <p class="blackstrong">
+
+      「コトジェネレーター」
+    </p>
+
+  を作りました！
+
+<br><br><br>
+POSSE Lab でたくさん遊んで、3.0期生ともーーっと仲良くなろう！！
+
+          </p>
+        </div>
+
+        
+        <p class="img">
+          <img src="../image/asobikata.jpeg" alt="" width="300vp">
+          <div class="asobikataText">
+            <h3>遊び方</h3>
+            
+              <h3 class="strong-r">
+
+              「POSSE②3期生クイズ」
+              </h3>
+              <p>
+
+                <br>
+                  　POSSE②3期生に関する3択クイズに挑戦だ！選択肢をクリックすると、正解・不正解が表示されるよ。<br><br>
+              </p>
+              <h3 class="strong-r">
+                「コトジェネレーター」
+              </h3>
+              <p>
+
+                <br>
+                　「コト生成する」のボタンを押してね。ボタンを押すと、ランダムでみんなで遊ぶお題「コト体験」が表示されるよ。
+                
+              </p>
+              
+            </div>
+          </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <img src="../image/logo.svg" alt="" width="">
+      </div>
+      <!-- <p>
+        2022
+      </p> -->
+    </footer>
+  </body>
+</html>
