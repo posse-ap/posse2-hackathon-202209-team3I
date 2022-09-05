@@ -216,7 +216,7 @@ body{
     font-size: large;
     display: block;
     margin:0 auto;
-    z-index: 10;
+    z-index: 100;
 }
 #btn, #result > a {
     cursor: pointer;
