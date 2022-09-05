@@ -1,3 +1,4 @@
+
 body {
     background: #efdec1;
     font-size: 14px;
@@ -56,6 +57,10 @@ body {
 
 #choices > li.wrong::after {
     content: ' ... wrong!';
+}
+
+.box{
+    background-color: #155724;
 }
 
 #btn, #result > a {

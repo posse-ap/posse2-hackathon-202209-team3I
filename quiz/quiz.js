@@ -4,6 +4,8 @@
     const question = document.getElementById('question');
     const choices = document.getElementById('choices');
     const btn = document.getElementById('btn');
+    const result = document.getElementById('result');
+    const scoreLabel = document.querySelector('#result > p');
 
 
     const quizSet = shuffle([

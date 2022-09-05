@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="quiz-score.css">
 </head>
-<link rel="stylesheet" href="quiz-score.css">
 <body>
+    <section class="container">
+        <p id="question"></p>
+        <ul id="choices"></ul>
+        <div class="box"></div>
+        <div id="btn" class="disabled">NEXT</div>
+    </section>
+
     <section id="result" class="hidden">
         <p></p>
-        <a href="">Replay?</a>
     </section>
 
     <script src="quiz-score.js"></script>
