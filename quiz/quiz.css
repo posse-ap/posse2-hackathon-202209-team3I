@@ -172,7 +172,14 @@ body{
     padding: 20px 40px;
     margin-bottom: 50px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
+@media screen and (min-width: 480px){
+    #choices > li{
+        width: 500px;
+    }
+    }
 
 #choices > li:hover {
     background: #f8f8f8;
@@ -209,6 +216,7 @@ body{
     font-size: large;
     display: block;
     margin:0 auto;
+    z-index: 10;
 }
 #btn, #result > a {
     cursor: pointer;
@@ -224,23 +232,40 @@ body{
 
 #result {
     position: absolute;
-    width: 300px;
+    width: 350px;
+    height: 500px;
     background: #fff;
-    padding: 30px;
-    top: 50px;
+    /* padding-left: 80px; */
+    top: 400px;
     left: 0;
     right: 0;
     border-radius: 4px;
     text-align: center;
     transition: 0.4s;
+    line-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
+@media screen and (min-width: 480px){
+    #result{
+        height: 600px;
+        width:600px;
+        top: 500px;
+    
+    }
+    }
+    
+
+
+
 
 #result.hidden {
-    transform: translateY(-500px);
+    transform: translateY(-1000px);
 }
 
 #result > p {
     font-size: 24px;
+    text-align: center;
 }
 
 #result > a {
