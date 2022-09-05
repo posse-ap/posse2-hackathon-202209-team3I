@@ -102,6 +102,11 @@ li {
     z-index: 1500;
 }
 
+li>a{
+    text-decoration: none;
+    color: white;
+}
+
 #confirm:checked ~ ul {
     right:0 ;
     z-index: 1000;
@@ -117,13 +122,22 @@ body{
 }
 .main img{
     /* width: 50%; */
-    margin-top: 40px;
+    margin-bottom: 40px;
     width: 370px;
     height: 300px;
     object-fit: cover;
+    padding-top: 70px;
 }
+@media screen and (min-width: 480px){
+    .main img{
+      width: 600px;
+      height: 100%;
+    }
+  }
+
+
 .container{
-    font-size: 20px;
+    font-size: 18px;
 }
 .container p{
     text-align: center;
@@ -135,6 +149,7 @@ body{
     height: 70px;
     border-radius: 100vh;
     margin-top: 100px;
+    margin-bottom: 30px;
     font-size: large;
 
 }
@@ -145,9 +160,10 @@ body{
 }
 
 footer {
+    
     background-color: lightgray;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
