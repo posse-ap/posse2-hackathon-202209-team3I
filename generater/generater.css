@@ -102,6 +102,11 @@ li {
     z-index: 1500;
 }
 
+li>a{
+  text-decoration: none;
+  color: white;
+}
+
 #confirm:checked ~ ul {
     right:0 ;
     z-index: 1000;
@@ -134,6 +139,15 @@ main{
   font-weight: bold;
   font-family: Arial, sans-serif;
 }
+@media screen and (min-width: 480px){
+  .kotoGenerator{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    
+
+  }
+}
 
 .panelBox {
   width: 240px;
@@ -148,6 +162,12 @@ main{
   object-fit: cover;
   border-radius: 60%;
   border: solid 10px #67b4cd;
+}
+@media screen and (min-width: 480px){
+  .kotoGenerator img{ 
+    width: 100%;
+margin-bottom: 20px;
+  }
 }
 
 .stopButton {
@@ -190,9 +210,10 @@ footer{
   background-color: lightgray;
   padding-top: 10px;
   padding-bottom: 10px; 
-
+  margin-top: 150px;
 }
 footer div{
   text-align: center;
   margin: 0 auto;
+
 }
