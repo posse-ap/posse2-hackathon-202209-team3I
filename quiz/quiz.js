@@ -64,6 +64,9 @@
         shuffledChoices.forEach(choice => {
             const li = document.createElement('li');
             li.textContent = choice;
+
+
+
             li.addEventListener('click', () => {
                 checkAnswer(li);
             });
@@ -75,10 +78,7 @@
         }
     }
 
-    // function checkscore() {
-    //     document.getElementById('wrapper').innerHTML =
-    //     ""
-    // }
+
 
     setQuiz();
 
