@@ -1,10 +1,12 @@
 'use strict';
 
 {
+    const resultpage = document.getElementById('wrapper');
     const question = document.getElementById('question');
     const choices = document.getElementById('choices');
     const btn = document.getElementById('btn');
-
+    const result = document.getElementById('result');
+    const scoreLabel = document.querySelector('#result > p');
 
     const quizSet = shuffle([
         {q: '清楚な人は誰でしょう？', c : ['冨永恵祐', '臺本純華', '東明日菜']},
@@ -42,10 +44,12 @@
             score++;
         } else {
             li.classList.add('wrong');
-        }
+        } 
     
         btn.classList.remove('disabled');
     }
+
+
     
     function setQuiz() {
         isAnswered = false;
@@ -71,6 +75,10 @@
         }
     }
 
+    // function checkscore() {
+    //     document.getElementById('wrapper').innerHTML =
+    //     ""
+    // }
 
     setQuiz();
 
@@ -78,14 +86,17 @@
         if (btn.classList.contains('disabled')) {
             return;
         }
-        btn.classList.add('disabled');
-
+        
         if (currentNum === quizSet.length - 1) {
             scoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
             result.classList.remove('hidden');
+            btn.classList.add('disabled');
         } else {
             currentNum++;
             setQuiz();
+
+        
         }
+
     });
 }
