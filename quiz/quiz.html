@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3期生クイズ</title>
     <link rel="stylesheet" href="/quiz/reset.css">
     <link rel="stylesheet" href="/quiz/quiz.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div>
+                <a href="../toppage/toppage.html">
+                <img src="../image/posselab.jpg" alt=""" width="">
+                </a>
+            </div>
+            <input type="checkbox" id="confirm">
+            <span class="hum1"></span>
+            <span class="hum2"></span>
+            <span class="hum3"></span>
+            <label for="confirm"></label>
+            
+            <ul class="header_container">
+                <li class="header_item"><a href="../toppage/toppage.html">トップページ</a></li>
+                <li class="header_item"><a href="../quiz/quiz.html">クイズページ</a></li>
+                <li class="header_item"><a href="../generater/generater.html">コトジェネレーター</a></li>
+            </ul>
+        </header>
+        </div>
     <div class="main" id="wrapper">
         <img src="/image/quiz.jpeg" alt="">
-        <div class="container">
+        <div class="main_container">
             <section id="question">
+                <!-- <span id="js_number">Q</span> -->
                 <p></p>
             </section>
             <ul id="choices"></ul>
             <button id="btn" class="disabled">NEXT</button>
             <section id="result" class="hidden">
                 <p></p>
-
             </section>
         </div>
     </div>
-
+    <footer>
+        <div>
+            <img src="../image/logo.svg" alt="" width="">
+        </div>
+    </footer>
+    </div>
     <script src="quiz.js"></script>
-
 </body>
 </html>

@@ -37,6 +37,10 @@
 
 
 'use strict'
+// {
+//     const result = document.getElementById('result');
+//     const scoreLabel = document.querySelector('#result > p');
+// }
 {
     const result = document.getElementById('result');
     const scoreLabel = document.querySelector('#result > p');
@@ -47,7 +51,7 @@ if (currentNum === quizSet.length - 1) {
     console.log(`Score: ${score} / ${quizSet.length}`);
     console.log(`Score: ${score} / ${quizSet.length}`);
     scoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
-    result.classList.remove('hidden');
+    // result.classList.remove('hidden');
     } else {
         currentNum++;
         setQuiz();

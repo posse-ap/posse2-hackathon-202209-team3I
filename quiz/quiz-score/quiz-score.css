@@ -1,16 +1,20 @@
 #result {
     position: absolute;
-    width: 300px;
+    width: 500px;
+    height: 500px;
     background: #fff;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 50px;
+    top: 410px;
     left: 0;
     right: 0;
     margin: 0 auto;
     border-radius: 4px;
     text-align: center;
     transition: 0.4s;
+    height: 400px;
+
+
 }
 
 #result.hidden {
@@ -18,10 +22,33 @@
 }
 
 #result > p {
-    font-size: 24px;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 #result > a {
     display: block;
     text-decoration: none;
+}
+
+#btn{
+    background-color:#92c2d2 ;
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    border-radius: 100vh;
+    font-size: large;
+    display: block;
+    margin:0 auto;
+}
+#btn, #result > a {
+    cursor: pointer;
+    color: #000;
+}
+
+#btn.disabled {
+    background: #ccc;
+    box-shadow: 0 4px 0 #bbb;
+    opacity: 0.7;
+
 }

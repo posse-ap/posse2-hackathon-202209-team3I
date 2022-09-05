@@ -2,6 +2,7 @@
 
 {
     const resultpage = document.getElementById('wrapper');
+    // const number = document.getElementById('number');
     const question = document.getElementById('question');
     const choices = document.getElementById('choices');
     const btn = document.getElementById('btn');
@@ -20,6 +21,7 @@
         {q: '自称恋愛マスターは誰でしょう？', c : ['西田優希', '伊藤流星', '中井厚博']},
         {q: '最近韓国人の義姉ができました　誰でしょう？', c : ['東明日菜', '臺本純華', '福田沙良']},
     ]);
+    // let Number = quizSet + 1;
     let currentNum = 0;
     let isAnswered;
     let score = 0;
@@ -64,9 +66,6 @@
         shuffledChoices.forEach(choice => {
             const li = document.createElement('li');
             li.textContent = choice;
-
-
-
             li.addEventListener('click', () => {
                 checkAnswer(li);
             });
@@ -78,7 +77,10 @@
         }
     }
 
-
+    // function checkscore() {
+    //     document.getElementById('wrapper').innerHTML =
+    //     ""
+    // }
 
     setQuiz();
 
